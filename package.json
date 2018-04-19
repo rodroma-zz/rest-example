@@ -1,0 +1,28 @@
+{
+  "name": "rest-example",
+  "version": "1.0.0",
+  "description": "Sample rest api",
+  "author": "Rodrigo Martin",
+  "license": "MIT",
+  "dependencies": {
+    "restify": "^7.1.1"
+  },
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "node dist/server.js",
+    "build": "npm run build-ts && npm run tslint",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "test": "jest --forceExit --coverage --verbose",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/node": "^9.6.5",
+    "@types/restify": "^5.0.7",
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.4",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1"
+  }
+}
